@@ -6,7 +6,19 @@
     <router-link to="">Login</router-link> |
   </div>
   <router-view />
+  <Footer />
 </template>
+
+<script>
+// @ is an alias to /src
+import Footer from "@/components/Footer.vue";
+export default {
+  name: "App", 
+  components: {
+    Footer,
+  },
+};
+</script>
 
 <style>
 #app {
