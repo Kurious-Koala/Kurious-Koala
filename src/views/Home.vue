@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="logo" src="../assets/logo.jpeg" />
+    <img class="logo" alt="logo" src="../assets/logo.jpeg" />
     <HomePage msg="Welcome to our Online Game" />
   </div>
 </template>
@@ -16,3 +16,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.logo {
+  border-radius: 50%;
+}
+</style>

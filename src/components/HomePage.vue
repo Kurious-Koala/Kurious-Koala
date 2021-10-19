@@ -1,11 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <button>
+    <button class="play">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="35"
-        height="35"
+        width="45"
+        height="45"
         fill="currentColor"
         class="bi bi-play-circle-fill"
         viewBox="0 0 16 16"
@@ -31,5 +31,16 @@ export default {
 <style scoped>
 h1 {
     font-family: Ribeye;
+}
+.logo {
+  border-radius: 25px;
+}
+.play {
+   margin: 40px 0 50px;
+   background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
 }
 </style>
