@@ -38,9 +38,9 @@ h1 {
   padding-bottom: 50px;
   font-size: medium;
 }
-.footer p {
+.copyright p {
   font-family: Roboto;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 ul {
   list-style-type: none;
@@ -51,10 +51,10 @@ li {
   margin: 0 10px;
 }
 .copyright {
-  display: flex;
+  /* display: flex;
   height: 30vh;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 50px;
+  margin-top: 50px; */
 }
 </style>

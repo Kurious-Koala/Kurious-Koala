@@ -30,17 +30,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-    font-family: Ribeye;
+  font-family: Ribeye;
 }
 .logo {
   border-radius: 25px;
 }
 .play {
-   margin: 40px 0 50px;
-   background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;  
+  margin: 40px 0 50px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
 }
 </style>
