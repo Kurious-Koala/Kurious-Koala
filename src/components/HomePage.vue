@@ -1,7 +1,8 @@
 <template>
-  <div class="hello">
+  <div class="hello" v-if="appear">
+    <img class="logo" alt="logo" src="../assets/logo.jpeg" />
     <h1>{{ msg }}</h1>
-    <button class="play">
+    <button class="play" @click="start" :disabled="isPlaying">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="45"
@@ -16,24 +17,43 @@
       </svg>
     </button>
   </div>
+  <GameLevel1 v-if="isPlaying" />
 </template>
 
 <script>
+import GameLevel1 from "../components/GameLevel1.vue";
+
 export default {
   name: "HomePage",
   props: {
     msg: String,
+  },
+  components: { GameLevel1 },
+  data() {
+    return {
+      isPlaying: false,
+      delay: null,
+      appear: true,
+    };
+  },
+  methods: {
+    start() {
+      this.delay = 2000 + Math.random() * 5000;
+      this.isPlaying = true;
+      console.log(this.delay);
+      this.appear = false;
+    },
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.logo {
+  border-radius: 50%;
+}
 h1 {
   font-family: Ribeye;
-}
-.logo {
-  border-radius: 25px;
 }
 .play {
   margin: 40px 0 50px;
