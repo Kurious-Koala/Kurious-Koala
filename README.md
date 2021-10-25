@@ -1,4 +1,4 @@
-# onlinegame
+# Kurious Koala
 
 ## Project setup
 ```
