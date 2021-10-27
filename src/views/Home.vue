@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HomePage msg="Welcome to our Online Game" />
+    <HomePage msg="Welcome to Kurious Koala" />
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="hello" v-if="appear">
-    <img class="logo" alt="logo" src="../assets/giga-vue.svg" />
+    <img class="logo" alt="logo" src="../assets/logo.jpg" />
     <h1>{{ msg }}</h1>
     <button class="play" @click="start" :disabled="isPlaying">
       <svg
@@ -50,9 +50,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .logo {
-  border-radius: 50%;
-  width: 300px;
-  height: 250px;
+  width: 250px;
+  height: 320px;
 }
 h1 {
   font-family: Ribeye;
