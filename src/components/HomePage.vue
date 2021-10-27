@@ -1,6 +1,6 @@
 <template>
   <div class="hello" v-if="appear">
-    <img class="logo" alt="logo" src="../assets/logo.jpeg" />
+    <img class="logo" alt="logo" src="../assets/giga-vue.svg" />
     <h1>{{ msg }}</h1>
     <button class="play" @click="start" :disabled="isPlaying">
       <svg
@@ -51,6 +51,8 @@ export default {
 <style scoped>
 .logo {
   border-radius: 50%;
+  width: 300px;
+  height: 250px;
 }
 h1 {
   font-family: Ribeye;
