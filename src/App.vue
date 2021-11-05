@@ -46,7 +46,7 @@ export default {
 #app {
   font-family: "Henny Penny", cursive;
   text-align: center;
-  color: #000000;
+  color: 'black';
   font-size: 24px;
 }
 
@@ -64,14 +64,6 @@ export default {
   font-weight: bold;
   color: "black";
   padding: 0 20px;
-}
-
-#nav a:hover {
-  color: "lightGreen";
-}
-
-#nav a.router-link-exact-active {
-  color: "lightGreen";
 }
 
 .welcome-msg {
