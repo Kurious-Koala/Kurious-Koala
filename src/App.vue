@@ -7,13 +7,17 @@
     <router-link to="/about" :style="{ color: black }">About</router-link>
     <router-link to="/levels" :style="{ color: black }">Levels</router-link>
     <router-link to="/login" :style="{ color: black }">Login</router-link>
-    <select v-model="currentLocale">
-      <option v-for="locale in locales" v-bind:key="locale.id">
-        {{ locale.name }}
+    <select class="languageSelector" v-model="currentLocale">
+      <option
+        class="optionLanguage"
+        v-for="locale in locales"
+        :value="locale.value"
+        :key="locale.value"
+      >
+        {{ locale.id }}
       </option>
     </select>
   </div>
-  <!-- <img class="globe" alt="globe" src="./assets/globe.svg" /> -->
   <router-view />
   <Footer />
 </template>
@@ -46,7 +50,7 @@ export default {
 #app {
   font-family: "Henny Penny", cursive;
   text-align: center;
-  color: 'black';
+  color: "black";
   font-size: 24px;
 }
 
@@ -66,4 +70,14 @@ export default {
   padding: 0 20px;
 }
 
+.languageSelector {
+  border: none;
+  font-weight: bold;
+}
+
+.optionLanguage {
+  border: none;
+  color: "black";
+  font-size: 24px;
+}
 </style>
