@@ -3,18 +3,17 @@
     <img class="koala" alt="koala" src="./assets/KoalaNavbar.png" />
   </div>
   <div id="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/levels">Levels</router-link>
-    <router-link to="/login">Login</router-link>
+    <router-link to="/" :style="{ color: black }">Home</router-link>
+    <router-link to="/about" :style="{ color: black }">About</router-link>
+    <router-link to="/levels" :style="{ color: black }">Levels</router-link>
+    <router-link to="/login" :style="{ color: black }">Login</router-link>
     <select v-model="currentLocale">
       <option v-for="locale in locales" v-bind:key="locale.id">
         {{ locale.name }}
       </option>
     </select>
-    <p class="welcome-msg">{{ message[currentLocale] }}</p>
   </div>
-  <!-- <img class="globe" alt="globe" src="./assets/globe.svg" /> --> 
+  <!-- <img class="globe" alt="globe" src="./assets/globe.svg" /> -->
   <router-view />
   <Footer />
 </template>
@@ -30,12 +29,9 @@ export default {
   el: "#app",
   data() {
     return {
-      message: {
-        en: "Welcome to kurious Koala",
-        gr: "Καλώς ήρθατε στο kurious Koala",
-        sv: "Välkomna till kurious Koala",
-      },
-      currentLocale: "en",
+      green: "#087d12",
+      black: "#000000",
+      lightGreen: "#96d19b",
       locales: [
         { id: "en", name: "English" },
         { id: "gr", name: "Greek" },
@@ -66,21 +62,21 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #000000;
+  color: "black";
   padding: 0 20px;
 }
 
-.koala:hover {
-  color: #96d19b;
+#nav a:hover {
+  color: "lightGreen";
 }
 
 #nav a.router-link-exact-active {
-  color: #96d19b;
+  color: "lightGreen";
 }
 
 .welcome-msg {
   font-family: "Ribeye Marrow";
-  color: #087d12;
+  color: "green";
   font-size: 30px;
   padding-top: 50px;
 }
