@@ -55,8 +55,8 @@ export default {
 }
 
 .koala {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: auto 240px;
 }
 
@@ -79,5 +79,27 @@ export default {
   border: none;
   color: "black";
   font-size: 24px;
+}
+
+/***************   RESPONSIVE DESIGN   ***************/
+
+/*** mobile phones view ***/
+@media (min-width: 575px) {
+
+}
+
+/*** tablets view ***/
+@media (min-width: 768px) {
+ 
+}
+
+/*** desktop view ***/
+@media (min-width: 992px) {
+
+}
+
+/*** extra large desktop view ***/
+@media (min-width: 1200px) {
+
 }
 </style>
