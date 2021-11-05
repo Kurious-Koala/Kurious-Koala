@@ -66,10 +66,4 @@ export default {
   padding: 0 20px;
 }
 
-.welcome-msg {
-  font-family: "Ribeye Marrow";
-  color: "green";
-  font-size: 30px;
-  padding-top: 50px;
-}
 </style>
