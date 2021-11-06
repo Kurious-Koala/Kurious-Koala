@@ -51,13 +51,13 @@ export default {
   font-family: "Henny Penny", cursive;
   text-align: center;
   color: "black";
-  font-size: 24px;
+  font-size: 10px;
 }
 
 .koala {
-  width: 60px;
-  height: 60px;
-  margin: auto 240px;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
 }
 
 #nav {
@@ -66,40 +66,66 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: "black";
   padding: 0 20px;
 }
 
 .languageSelector {
   border: none;
   font-weight: bold;
+  background-color: transparent;
 }
 
 .optionLanguage {
   border: none;
-  color: "black";
   font-size: 24px;
 }
 
 /***************   RESPONSIVE DESIGN   ***************/
 
 /*** mobile phones view ***/
-@media (min-width: 575px) {
-
+@media (min-width: 410px) {
+  .koala {
+    width: 40px;
+    height: 40px;
+    justify-content: flex-end;
+  }
+  #app {
+    font-size: 14px;
+  }
 }
 
 /*** tablets view ***/
 @media (min-width: 768px) {
- 
+  .koala {
+    width: 60px;
+    height: 60px;
+    justify-content: flex-end;
+  }
+  #app {
+    font-size: 18px;
+  }
 }
-
 /*** desktop view ***/
 @media (min-width: 992px) {
-
+  .koala {
+    width: 70px;
+    height: 70px;
+    justify-content: flex-end;
+  }
+  #app {
+    font-size: 24px;
+  }
 }
 
 /*** extra large desktop view ***/
 @media (min-width: 1200px) {
-
+  .koala {
+    width: 80px;
+    height: 80px;
+    justify-content: flex-end;
+  }
+   #app {
+    font-size: 26px;
+  }
 }
 </style>
