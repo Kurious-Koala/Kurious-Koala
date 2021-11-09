@@ -69,6 +69,12 @@ export default {
   padding: 0 20px;
 }
 
+#nav a:hover {
+  padding: 0 20px;
+  text-decoration-line: none;
+  text-shadow: 1px 1px;
+}
+
 .languageSelector {
   border: none;
   background-color: transparent;
