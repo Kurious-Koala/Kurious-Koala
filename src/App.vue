@@ -3,10 +3,12 @@
     <img class="koala" alt="koala" src="./assets/KoalaNavbar.png" />
   </div>
   <div id="nav">
-    <router-link to="/" :style="{ color: black }">Home</router-link>
-    <router-link to="/about" :style="{ color: black }">About</router-link>
-    <router-link to="/levels" :style="{ color: black }">Levels</router-link>
-    <router-link to="/login" :style="{ color: black }">Login</router-link>
+    <router-link to="/" :style="{ color: lightGreen }">Home</router-link>
+    <router-link to="/about" :style="{ color: lightGreen }">About</router-link>
+    <router-link to="/levels" :style="{ color: lightGreen }"
+      >Levels</router-link
+    >
+    <router-link to="/login" :style="{ color: lightGreen }">Login</router-link>
     <select class="languageSelector" v-model="currentLocale">
       <option
         class="optionLanguage"
@@ -50,7 +52,6 @@ export default {
 #app {
   font-family: "Henny Penny", cursive;
   text-align: center;
-  color: "black";
   font-size: 10px;
 }
 
@@ -65,13 +66,11 @@ export default {
 }
 
 #nav a {
-  font-weight: bold;
   padding: 0 20px;
 }
 
 .languageSelector {
   border: none;
-  font-weight: bold;
   background-color: transparent;
 }
 
@@ -124,7 +123,7 @@ export default {
     height: 80px;
     justify-content: flex-end;
   }
-   #app {
+  #app {
     font-size: 26px;
   }
 }
