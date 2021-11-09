@@ -1,8 +1,8 @@
 <template>
-  <div class="hello" v-if="appear">
+  <div class="main" v-if="appear">
     <img class="logo" alt="logo" src="../assets/logo.jpg" />
     <h1>{{ msg }}</h1>
-    <button class="play" @click="start" :disabled="isPlaying">
+    <button class="playBtn" @click="start" :disabled="isPlaying">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="45"
@@ -54,9 +54,11 @@ export default {
   height: 320px;
 }
 h1 {
+  margin-top: 20px;
   font-family: Ribeye;
+  font-size: 30px;
 }
-.play {
+.playBtn {
   margin: 40px 0 50px;
   background-color: Transparent;
   background-repeat: no-repeat;
