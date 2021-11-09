@@ -1,7 +1,7 @@
 <template>
   <div class="main" v-if="appear">
     <img class="logo" alt="logo" src="../assets/logo.jpg" />
-    <h1>{{ msg }}</h1>
+    <h1 :style="{ color:green }">{{ msg }}</h1>
     <button class="playBtn" @click="start" :disabled="isPlaying">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +34,7 @@ export default {
       isPlaying: false,
       delay: null,
       appear: true,
+      green: "#087d12",
     };
   },
   methods: {
