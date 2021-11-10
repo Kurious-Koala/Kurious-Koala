@@ -1,7 +1,7 @@
 <template>
   <div class="HomePage" v-if="appear">
     <img class="HomePage__logo" alt="logo" src="../assets/logo.jpg" />
-    <h1 class="HomePage__header" :style="{ color:green }">{{ msg }}</h1>
+    <h1 class="HomePage__header" :style="{ color: green }">{{ msg }}</h1>
     <button class="HomePage__playBtn" @click="start" :disabled="isPlaying">
       <svg
         xmlns="http://www.w3.org/2000/svg"
