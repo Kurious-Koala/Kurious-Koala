@@ -1,8 +1,8 @@
 <template>
-  <div class="main" v-if="appear">
-    <img class="logo" alt="logo" src="../assets/logo.jpg" />
-    <h1 :style="{ color:green }">{{ msg }}</h1>
-    <button class="playBtn" @click="start" :disabled="isPlaying">
+  <div class="HomePage" v-if="appear">
+    <img class="HomePage__logo" alt="logo" src="../assets/logo.jpg" />
+    <h1 class="HomePage__header" :style="{ color:green }">{{ msg }}</h1>
+    <button class="HomePage__playBtn" @click="start" :disabled="isPlaying">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="45"
@@ -48,18 +48,19 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.logo {
+.HomePage__logo {
   width: 250px;
   height: 320px;
 }
-h1 {
+
+.HomePage__header {
   margin-top: 20px;
   font-family: Ribeye;
   font-size: 30px;
 }
-.playBtn {
+
+.HomePage__playBtn {
   margin: 40px 0 50px;
   background-color: Transparent;
   background-repeat: no-repeat;
