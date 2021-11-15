@@ -1,7 +1,7 @@
 <template>
-  <footer class="footer" style="{background-color: lightGreen}">
+  <footer class="footer" :style="{ backgroundColor: lightGreen }">
     <div class="footer__container">
-      <a class="footer__logo" href="#" style="{ color: green  }">
+      <a class="footer__logo" href="#" :style="{ color: black }">
         <span class="footer__logo--text footer__logo--text-cursive"
           >kurious</span
         >
@@ -108,7 +108,6 @@
 export default {
   data() {
     return {
-      green: "#087d12",
       black: "#000000",
       lightGreen: "#96d19b",
     };
