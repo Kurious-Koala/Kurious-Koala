@@ -38,7 +38,7 @@
               alt="grass"
               src="../assets/FooterTree.png"
             />
-             <img
+            <img
               class="footer__bottom--bee"
               alt="grass"
               src="../assets/FooterBee.png"
@@ -76,14 +76,15 @@
 
 <style scoped>
 .footer {
-  width: auto;
+  flex: 1 0 auto;
+  /* width: auto; */
   color: rgb(22, 21, 21);
   background-color: rgb(150, 209, 155);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 .footer__container {
-  width: 100%;
+  width: auto;
   margin: 0 auto;
   /* padding: 40px 0 30px; */
   display: flex;
@@ -152,7 +153,7 @@
 }
 
 .footer__bottom--secondTree {
-  width: 50px;
+  width: 60px;
   height: 60px;
   margin-right: 30px;
   position: relative;
@@ -160,6 +161,9 @@
 }
 
 .footer__bottom--bee {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 20px;
   height: 20px;
   position: relative;
@@ -168,12 +172,6 @@
 }
 
 /*** Copyright section ***/
-.footer__copyright span {
-  margin: 15px auto;
-  margin-bottom: 30px;
-  padding: 0;
-  font-style: normal;
-}
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -208,6 +206,10 @@
   .footer__logo--text,
   .footer__logo--text-cursive {
     font-size: 0.6em;
+  }
+  .footer__bottom--bee {
+    width: 15px;
+    height: 15px;
   }
 }
 </style>

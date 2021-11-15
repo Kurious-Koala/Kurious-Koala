@@ -22,7 +22,6 @@
 
 <script>
 import GameLevel1 from "../components/GameLevel1.vue";
-
 export default {
   name: "HomePage",
   props: {
