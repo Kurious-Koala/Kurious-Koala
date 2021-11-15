@@ -126,6 +126,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 
 /*** Logo Section ***/
