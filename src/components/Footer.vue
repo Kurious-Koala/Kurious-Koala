@@ -1,7 +1,7 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" style="{background-color: lightGreen}">
     <div class="footer__container">
-      <a class="footer__logo" href="#">
+      <a class="footer__logo" href="#" style="{ color: green  }">
         <span class="footer__logo--text footer__logo--text-cursive"
           >kurious</span
         >
@@ -104,10 +104,20 @@
   </footer>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      green: "#087d12",
+      black: "#000000",
+      lightGreen: "#96d19b",
+    };
+  },
+};
+</script>
+
 <style scoped>
 .footer {
-  color: rgb(22, 21, 21);
-  background-color: rgb(150, 209, 155);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
