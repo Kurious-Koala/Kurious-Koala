@@ -135,7 +135,6 @@ export default {
   flex-direction: column;
   font-size: 20px;
   text-decoration: none;
-  color: rgb(22, 21, 21);
 }
 
 .footer__logo--koala {
@@ -144,7 +143,6 @@ export default {
 }
 
 .footer__logo:hover {
-  color: #fff;
   transition: ease-in-out 0.3s;
 }
 
