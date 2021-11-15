@@ -21,7 +21,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
           <section class="footer__bottom">
             <img
               class="footer__bottom--grass hidden-xs hidden-sm"
@@ -29,28 +29,43 @@
               src="../assets/FooterGrass.png"
             />
             <img
-              class="footer__bottom--firstTree hidden-xs hidden-sm"
+              class="footer__bottom--grass hidden-xs hidden-sm"
               alt="grass"
+              src="../assets/FooterGrass.png"
+            />
+            <img
+              class="footer__bottom--firstTree hidden-sm"
+              alt="tree"
               src="../assets/FooterTree.png"
             />
             <img
-              class="footer__bottom--secondTree hidden-xs hidden-sm"
-              alt="grass"
+              class="footer__bottom--secondTree hidden-sm"
+              alt="tree"
               src="../assets/FooterTree.png"
+            />
+            <img
+              class="footer__bottom--flowers hidden-xs hidden-sm"
+              alt="flowers"
+              src="../assets/FooterFlowers.png"
+            />
+            <img
+              class="footer__bottom--flowers hidden-xs hidden-sm"
+              alt="flowers"
+              src="../assets/FooterFlowers.png"
             />
             <img
               class="footer__bottom--bee"
-              alt="grass"
+              alt="bee"
               src="../assets/FooterBee.png"
             />
           </section>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-12 col-sm-6 col-xs-6">
           <section class="footer__copyright">
             <span> Copyright © 2021 Kurious Koala </span>
           </section>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
           <section class="footer__bottom">
             <img
               class="footer__bottom--grass hidden-xs hidden-sm"
@@ -66,6 +81,21 @@
               class="footer__bottom--secondTree hidden-xs hidden-sm"
               alt="grass"
               src="../assets/FooterTree.png"
+            />
+            <img
+              class="footer__bottom--grass hidden-xs hidden-sm"
+              alt="grass"
+              src="../assets/FooterGrass.png"
+            />
+            <img
+              class="footer__bottom--flowers hidden-xs hidden-sm"
+              alt="flowers"
+              src="../assets/FooterFlowers.png"
+            />
+            <img
+              class="footer__bottom--grass hidden-xs hidden-sm"
+              alt="grass"
+              src="../assets/FooterGrass.png"
             />
           </section>
         </div>
@@ -76,8 +106,6 @@
 
 <style scoped>
 .footer {
-  flex: 1 0 auto;
-  /* width: auto; */
   color: rgb(22, 21, 21);
   background-color: rgb(150, 209, 155);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
@@ -86,7 +114,6 @@
 .footer__container {
   width: auto;
   margin: 0 auto;
-  /* padding: 40px 0 30px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,8 +130,8 @@
 }
 
 .footer__logo--koala {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 }
 
 .footer__logo:hover {
@@ -112,19 +139,14 @@
   transition: ease-in-out 0.3s;
 }
 
-.footer__logo--text {
-  text-align: center;
-  font-size: 1.8em;
-  line-height: 2em;
-}
-
 .footer__logo--text-cursive {
+  font-size: 1em;
   font-family: "Henny Penny", cursive;
-  font-size: 30px;
+  line-height: 2.2em;
 }
 
 .footer__logo--text-bold {
-  font-size: 30px;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -171,7 +193,18 @@
   right: -30px;
 }
 
+.footer__bottom--flowers {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: -23px;
+}
+
 /*** Copyright section ***/
+.footer__copyright {
+  margin-top: 40px;
+  font-size: 0.8em;
+}
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -182,6 +215,26 @@
   .footer__logo--text,
   .footer__logo--text-cursive {
     font-size: 1em;
+  }
+  .footer__bottom--grass {
+    position: relative;
+    bottom: -45px;
+  }
+  .footer__bottom--firstTree {
+    position: relative;
+    bottom: -20px;
+  }
+  .footer__bottom--secondTree {
+    position: relative;
+    bottom: 10px;
+  }
+  .footer__bottom--secondTree {
+    position: relative;
+    bottom: -25px;
+  }
+  .footer__bottom--flowers {
+    position: relative;
+    bottom: -43px;
   }
 }
 
@@ -194,6 +247,26 @@
   .footer__logo--text,
   .footer__logo--text-cursive {
     font-size: 0.8em;
+  }
+  .footer__bottom--grass {
+    position: relative;
+    bottom: -45px;
+  }
+  .footer__bottom--firstTree {
+    position: relative;
+    bottom: -20px;
+  }
+  .footer__bottom--secondTree {
+    position: relative;
+    bottom: 10px;
+  }
+  .footer__bottom--secondTree {
+    position: relative;
+    bottom: -25px;
+  }
+  .footer__bottom--flowers {
+    position: relative;
+    bottom: -43px;
   }
 }
 
@@ -210,6 +283,8 @@
   .footer__bottom--bee {
     width: 15px;
     height: 15px;
+    position: relative;
+    top: 10px;
   }
 }
 </style>
