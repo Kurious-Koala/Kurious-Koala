@@ -125,8 +125,8 @@ export default {
 /*** Footer Background ***/
 .footer {
   background: #00F260;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #81cff0, #7ddfa4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #03b3ff, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer__container {
@@ -165,6 +165,7 @@ export default {
 .footer__logo--text-bold {
   font-size: 1em;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 /*** Footer bottom Section(images) ***/
