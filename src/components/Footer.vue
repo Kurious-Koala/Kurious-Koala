@@ -1,5 +1,6 @@
 <template>
-  <footer class="footer" :style="{ backgroundColor: lightGreen }">
+<!-- Footer Logo -->
+  <footer class="footer">
     <div class="footer__container">
       <span
         class="footer__logo--text footer__logo--text-cursive"
@@ -21,6 +22,7 @@
           src="../assets/FooterLeaves.png"
       /></span>
     </div>
+    <!-- Images -->
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
@@ -62,11 +64,13 @@
             />
           </section>
         </div>
+        <!-- Copyright -->
         <div class="col-lg-4 col-md-12 col-sm-6 col-xs-6">
           <section class="footer__copyright">
             <span> Copyright © 2021 Kurious Koala </span>
           </section>
         </div>
+        <!-- Images --> 
         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
           <section class="footer__bottom">
             <img
@@ -118,8 +122,11 @@ export default {
 </script>
 
 <style scoped>
+/*** Footer Background ***/
 .footer {
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer__container {
@@ -160,7 +167,7 @@ export default {
   font-weight: bold;
 }
 
-/*** Footer bottom Section ***/
+/*** Footer bottom Section(images) ***/
 .footer__bottom {
   width: 100%;
 }
