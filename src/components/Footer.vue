@@ -1,23 +1,25 @@
 <template>
   <footer class="footer" :style="{ backgroundColor: lightGreen }">
     <div class="footer__container">
-      <a class="footer__logo" href="#" :style="{ color: black }">
-        <span class="footer__logo--text footer__logo--text-cursive"
-          >kurious</span
-        >
+      <span
+        class="footer__logo--text footer__logo--text-cursive"
+        :style="{ color: black }"
+        >kurious</span
+      >
+      <img
+        class="footer__logo--koala"
+        alt="logo"
+        src="../assets/FooterKoala.png"
+      />
+      <span
+        class="footer__logo--text footer__logo--text-bold"
+        :style="{ color: black }"
+        >Koala
         <img
-          class="footer__logo--koala"
-          alt="logo"
-          src="../assets/FooterKoala.png"
-        />
-        <span class="footer__logo--text footer__logo--text-bold"
-          >Koala
-          <img
-            class="footer__img--leaves"
-            alt="leaves"
-            src="../assets/FooterLeaves.png"
-        /></span>
-      </a>
+          class="footer__img--leaves"
+          alt="leaves"
+          src="../assets/FooterLeaves.png"
+      /></span>
     </div>
     <div class="container">
       <div class="row">
@@ -139,8 +141,8 @@ export default {
 }
 
 .footer__logo--koala {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
 }
 
 .footer__logo:hover {
@@ -164,8 +166,9 @@ export default {
 }
 
 .footer__img--leaves {
-  height: 20px;
-  width: 20px;
+  height: 13px;
+  width: 13px;
+  margin-bottom: 5px;
 }
 
 .footer__bottom--grass {
@@ -217,8 +220,8 @@ export default {
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   .footer__logo--koala {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
   }
   .footer__logo--text,
   .footer__logo--text-cursive {
@@ -244,17 +247,25 @@ export default {
     position: relative;
     bottom: -43px;
   }
+  .footer__img--leaves {
+    height: 9px;
+    width: 9px;
+  }
+  .footer__copyright {
+    margin-top: 65px;
+    font-size: 0.6em;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .footer__logo--koala {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
   }
   .footer__logo--text,
   .footer__logo--text-cursive {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .footer__bottom--grass {
     position: relative;
@@ -276,13 +287,21 @@ export default {
     position: relative;
     bottom: -43px;
   }
+  .footer__img--leaves {
+    height: 8px;
+    width: 8px;
+  }
+  .footer__copyright {
+    margin-bottom: 15px;
+    font-size: 0.5em;
+  }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   .footer__logo--koala {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
   }
   .footer__logo--text,
   .footer__logo--text-cursive {
@@ -293,6 +312,14 @@ export default {
     height: 15px;
     position: relative;
     top: 10px;
+  }
+  .footer__img--leaves {
+    height: 8px;
+    width: 8px;
+  }
+  .footer__copyright {
+    margin-top: 50px;
+    font-size: 0.4em;
   }
 }
 </style>
