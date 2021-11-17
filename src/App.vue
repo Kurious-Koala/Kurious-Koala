@@ -1,6 +1,10 @@
 <template>
-  <div class="koala">
-    <img class="koala" alt="koala" src="./assets/KoalaNavbar.png" />
+  <div class="KuriousKoala">
+    <img
+      class="KuriousKoala__img"
+      alt="KuriousKoalaImg"
+      src="./assets/KoalaNavbar.png"
+    />
   </div>
   <div id="nav">
     <router-link to="/" :style="{ color: lightGreen }">Home</router-link>
@@ -9,9 +13,9 @@
       >Levels</router-link
     >
     <router-link to="/login" :style="{ color: lightGreen }">Login</router-link>
-    <select class="languageSelector" v-model="currentLocale">
+    <select class="nav__languageSelector" v-model="currentLocale">
       <option
-        class="optionLanguage"
+        class="nav__languageSelector--option"
         v-for="locale in locales"
         :value="locale.value"
         :key="locale.value"
@@ -55,10 +59,9 @@ export default {
   font-size: 10px;
 }
 
-.koala {
+.KuriousKoala__img {
   width: 30px;
   height: 30px;
-  justify-content: center;
 }
 
 #nav {
@@ -75,33 +78,32 @@ export default {
   text-shadow: 1px 1px;
 }
 
-.languageSelector {
+.nav__languageSelector {
   border: none;
   background-color: transparent;
 }
 
-.optionLanguage {
+.nav__languageSelector--option {
   border: none;
   font-size: 24px;
 }
 
 /***************   RESPONSIVE DESIGN   ***************/
 
-/*** mobile phones view ***/
-@media (min-width: 410px) {
-  .koala {
+/*** Extra small devices only ***/
+@media (max-width: 767px) {
+  .KuriousKoala__img {
     width: 40px;
     height: 40px;
-    justify-content: flex-end;
   }
   #app {
     font-size: 14px;
   }
 }
 
-/*** tablets view ***/
-@media (min-width: 768px) {
-  .koala {
+/*** Small devices only ***/
+@media (min-width: 768px) and (max-width: 991px) {
+  .KuriousKoala__img {
     width: 60px;
     height: 60px;
     justify-content: flex-end;
@@ -110,12 +112,12 @@ export default {
     font-size: 18px;
   }
 }
-/*** desktop view ***/
-@media (min-width: 992px) {
-  .koala {
+
+/*** Medium devices only ***/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .KuriousKoala__img {
     width: 70px;
     height: 70px;
-    justify-content: flex-end;
   }
   #app {
     font-size: 24px;
@@ -124,10 +126,9 @@ export default {
 
 /*** extra large desktop view ***/
 @media (min-width: 1200px) {
-  .koala {
+  .KuriousKoala__img {
     width: 80px;
     height: 80px;
-    justify-content: flex-end;
   }
   #app {
     font-size: 26px;
